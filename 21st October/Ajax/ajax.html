@@ -1,0 +1,41 @@
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- <script>
+    $.ajax({
+        method:"GET",
+        url:"https://restcountries.eu/rest/v2/all",
+        success:(posRes)=>{
+            console.log(posRes);
+        },
+        error:(errorRes)=>{
+            console.log(errorRes);
+        }
+    });
+</script> -->
+<!-- <script>
+    $.ajax({
+        method:"GET",
+        url:"https://www.w3schools.com/angular/customers.php",
+        success:(posRes)=>{
+            console.log(posRes);
+        },
+        error:(errorRes)=>{
+            console.log(errorRes);
+        }
+
+    });
+</script> -->
+<script>
+    $.ajax({
+        method:"POST",
+        url:"http://test-routes.herokuapp.com/test/uppercase",
+        data:{"message":"welcome to reactjs"},
+        success:(posRes)=>{
+            console.log(posRes);
+        },
+        error:(errorRes)=>{
+            console.log(errorRes);
+
+        }
+        
+    });
+</script>

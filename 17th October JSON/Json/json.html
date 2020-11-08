@@ -1,0 +1,164 @@
+<!-- <script>
+    let obj={
+        key1:"ranjeet",
+        'key2':121,
+        "key3":"suman"
+    };
+    for(let key in obj){
+        console.log(key,obj[key]);
+    }
+    
+</script> -->
+<!-- <script>
+    let obj={
+        login:login,
+        logout:logout
+    };
+    function login(){
+        return "welcome to login module";
+    };
+    function logout(){
+        return "welocme to logout module";
+    };
+    console.log(login,logout);
+    console.log(login()+"<br/>" +logout());
+</script> -->
+<!-- <script>
+    let obj={
+        oracle:()=>{
+            "oracle connection getting soon!!";
+        },
+        mysql:()=>{
+            "mysql coonection getting soon...";
+        },
+        sqlservice:()=>{
+            "sqlservice coonection getting soon";
+        },
+        mongodb:()=>{
+            "mongodb is connecting getting soon";
+
+        }
+    };
+    console.log(obj.oracle);
+    console.log(obj.mysql,obj.sqlservice,obj.mongodb);
+</script> -->
+<!-- <script>
+let obj={
+    "p_id":111
+};
+console.log(obj);
+Object.freeze(obj);
+obj.p_name="p_one";
+console.log(obj);
+obj.p_id=222;
+console.log(obj);
+
+</script> -->
+
+<!-- <script>
+    // let obj={
+    //     "p_id":111
+    // };
+    // console.log(obj);
+    // Object.seal(obj);
+    // obj.p_id=222;
+    // console.log(obj);
+    // obj.p_name="p_name";
+    // console.log(obj);
+    // delete obj.p_id;
+    // console.log(obj);
+    // let obj={};
+    // obj["key1"]="hello";
+    // console.log(obj);
+</script> -->
+<!-- <script>
+    let obj={
+        "p_id":111
+    };
+    console.log(obj);
+    Object.defineProperty(obj,"p_name",{
+     value:"p_one",writable:false   
+    });
+    console.log(obj);
+    obj.p_id="p_111";
+    console.log(obj);
+    obj.p_name="product_one";
+    console.log(obj);
+    delete obj.p_id;
+    console.log(obj);
+    delete obj.p_name;
+    console.log(obj);
+</script> -->
+
+<script>
+    let obj={
+        "p_id":111
+    };
+    Object.defineProperties(obj,{"p_name":{value:"p_one", writable:false},
+                                 "p_cost":{value:10000,writable:true}
+                                 });
+    console.log(obj);
+    obj.p_id="p111";
+    obj.p_name="product_name";
+    obj.p_cost =5000000;
+    console.log(obj);
+    delete obj.p_id;
+    delete obj.p_name;
+    delete obj.p_cost ;
+    console.log(obj);                           
+                                 
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<script>
+    let records=[{"Name":"Alfreds Futterkiste","City":"Berlin","Country":"Germany"}, {"Name":"Ana Trujillo Emparedados y helados","City":"México D.F.","Country":"Mexico"}, {"Name":"Antonio Moreno Taquería","City":"México D.F.","Country":"Mexico"}, {"Name":"Around the Horn","City":"London","Country":"UK"}, {"Name":"B's Beverages","City":"London","Country":"UK"}, {"Name":"Berglunds snabbköp","City":"Luleå","Country":"Sweden"}, {"Name":"Blauer See Delikatessen","City":"Mannheim","Country":"Germany"}, {"Name":"Blondel père et fils","City":"Strasbourg","Country":"France"}, {"Name":"Bólido Comidas preparadas","City":"Madrid","Country":"Spain"}, {"Name":"Bon app'","City":"Marseille","Country":"France"}, {"Name":"Bottom-Dollar Marketse","City":"Tsawassen","Country":"Canada"}, {"Name":"Cactus Comidas para llevar","City":"Buenos Aires","Country":"Argentina"}, {"Name":"Centro comercial Moctezuma","City":"México D.F.","Country":"Mexico"}, {"Name":"Chop-suey Chinese","City":"Bern","Country":"Switzerland"}, {"Name":"Comércio Mineiro","City":"São Paulo","Country":"Brazil"}]
+document.write(`<table border="1" align="center" cellspacing="10px" cellpadding="10px">
+                <thead>
+                <tr>
+                <th>SL No.</th>
+                <th>NAME</th>
+                <th>City</th>
+                <th>Country</th>
+                </tr>
+                </thead><tbody>`);
+records.forEach((element,index)=>{
+    document.write(`<tr>
+                    <td>${index}</td>
+                    <td>${element.Name}</td>
+                    <td>${element.City}</td>
+                    <td>${element.Country}</td>
+                    </tr>
+    `);
+});
+document.write(`</tbody></table>`);    
+// let obj={
+//     "sub_one":"reactJs",
+//     "sub_two":"Node Js",
+//     "sub_three":"MongoDB"
+// };
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+// console.log(obj);
+// let arr=Object.entries(obj);   
+// console.log(arr);
+// let obj1=Object.fromEntries(arr);
+// console.log(obj1);  
+
+let obj1={
+    "sub_one":"ranjeet"
+};
+let obj2={"sub_two":"Kumar"};
+let obj3={"sub_three":"suman"};
+//let final_obj=Object.assign(obj1,obj2,obj3);
+final_obj={...obj1,...obj2,...obj3};
+console.log(final_obj);
+console.log(obj1.hasOwnProperty("sub_one"));
+       
+</script>

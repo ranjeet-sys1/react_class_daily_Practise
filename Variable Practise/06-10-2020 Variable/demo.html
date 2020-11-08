@@ -1,0 +1,56 @@
+<script>
+var product=[
+    {"pid":111,"p_name":"p+one","pcost":2000},
+    {"pid":222,"p_name":"p+two","pcost":4000},
+    {"pid":333,"p_name":"p+three","pcost":3000},
+    {"pid":411,"p_name":"p+four","pcost":15000},
+    ]
+    document.write(`<table border="1">
+    <thead>
+    <th>Index</th>
+    <th>PID</th>
+    <th>PName</th>
+    <th>PCost</th>
+    </thead>`);
+    product.forEach((element,index)=>{
+        document.write(`<tbody>
+        <tr>
+        <td>${index+1}</td>
+        <td>${element.pid}</td>
+        <td>${element.p_name}</td>
+        <td>${element.pcost}</td>`)
+
+
+    });
+    document.write(`</tbody></table>`);
+
+
+var a=["Pavani","kanika","Mamtha"];
+for(var q in a)
+{
+    document.write(q+" ."+a[q]+"<br/>");
+}
+var calc=[1,4,3,8];
+var final=calc.map(test);
+function test(x)
+{
+    return x*10;
+}
+document.write(final+"<br/>");
+var arr1=["Mean Stack","Mern Stack","maven stack"];
+var arr2=["angular","react Js","VueJs"];
+arr1.forEach((element,index)=>{
+    document.write(element+"--> "+arr2[index] +"<br/>");
+})
+var ram={"sub_one":"javascript",
+        "sub_two":"reactjs",
+        "sub_three":"angular"
+        }
+for(var key in ram)
+{
+    console.log(key+" "+ram[key]);
+}
+
+
+
+</script>

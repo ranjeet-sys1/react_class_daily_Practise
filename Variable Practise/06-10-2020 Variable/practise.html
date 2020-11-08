@@ -1,0 +1,43 @@
+<script>
+    var a=["Ranjeet","Kumar","Suman"];
+    a.forEach(function(value,index)
+    {
+        document.write(index+1+". "+value+" "+"</br>")
+    })
+    var b=["ram","shyam","Mohan","Sohan"];
+    document.write(b+"<br/>");
+    b.forEach(loop);
+    function loop(value,index){
+        document.write(index+10+". "+value+" "+"</br>")
+
+    }
+    var c={
+        fname:"Ranjeet",
+        lname:"suman",
+        age:25,
+        email:'ranjeetsuman123@gmail.com'
+    }
+    console.log(c);
+    document.write("</br>"+c.fname+"of "+c.age+"having email id is "+c.email+"</br>");
+    var d={
+        fname:"Ranjeet",
+        lname:"suman",
+        age:25,
+        email:'ranjeetsuman123@gmail.com',
+        favMovies:['Ijjazat','LIfe of Pie','shawshunk redemption'],
+        fullName:function(){
+            return this.fname+" "+this.lname;
+        },
+        living:{
+            'city':'patna',
+            'Colony':'Hanuman Nagar',
+            'Country':'India'
+        }
+
+
+    }
+    document.write(d.favMovies[0]+"<br/>");
+    document.write(d.fullName()+"</br>")
+    console.log(d.living);
+    document.write(d.living.city)
+</script>

@@ -1,0 +1,32 @@
+<script>
+let prod=[
+{"p_id":111,"P_name":"p_one","pcost":10000},
+{"p_id":222,"P_name":"p_two","pcost":20000},
+{"p_id":333,"P_name":"p_three","pcost":30000},
+{"p_id":444,"P_name":"p_four","pcost":40000},
+
+]
+console.log(prod);
+document.write(`<table border="1" align="center">
+                <thead>
+                <tr>
+                <th>index</th>
+                <th>PID</th>
+                <th>PName</th>
+                <th>PCOST</th>
+                </tr>
+                </thead>
+                <tbody>`);
+prod.forEach((element,index)=>{
+    document.write(`<tr>
+                    <td>${index+1}</td>
+                    <td>${element.p_id}</td>
+                    <td>${element.P_name}</td>
+                    <td>${element.pcost}</td>
+                    
+
+    </tr>`)
+
+});
+document.write(`</tbody></table>`);
+</script>
